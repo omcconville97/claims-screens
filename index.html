@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <nav class="navigationBar">
+
+            <div class="logoStyle">
+              <span class="claims">Claims</span>
+              <span class="first">1st</span>
+            </div>
+
+            <ul class="navigationLinks">
+              <li class="parent"><a class="link" href="#">Home</a></li>
+              <li class="parent"><a class="link" href="#">New Claim</a></li>
+              <li class="parent" id="clients"><a class="link" href="#">Open Claims</a></li>
+              <li class="parent" id="services"><a class="link" href="#">Search</a></li>
+              <li class="parent"><a class="link" href="#">Archive</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="container">
+            <form>
+                    <h2 class="formTitle">Register New Claim</h2>
+
+                    <label for="policyNumber">Policy Number</label>
+                    <input type="text" name="policyNumber" id="policyNumber" placeholder="Policy No.">
+
+                    <label for="title">Title</label>
+                    <select name="title" id="title">
+                        <option value="" disabled selected>-- select --</option>
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                    </select>
+
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" placeholder="Surname">
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email Address">
+                    
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone No.">
+
+                    <button type="button" name="registerButton">Register</button>
+
+                
+            </form>
+        </div>
+
+        <footer class="footerindex">
+            <p>&copy Claims First 2022</p>
+        </footer>
+
+    </body>
+</html>

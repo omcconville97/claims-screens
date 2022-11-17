@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <nav class="navigationBar">
+
+            <div class="logoStyle">
+              <span class="claims">Claims</span>
+              <span class="first">1st</span>
+            </div>
+
+            <ul class="navigationLinks">
+              <li class="parent"><a class="link" href="#">Home</a></li>
+              <li class="parent"><a class="link" href="#">New Claim</a></li>
+              <li class="parent" id="clients"><a class="link" href="#">Open Claims</a></li>
+              <li class="parent" id="services"><a class="link" href="#">Search</a></li>
+              <li class="parent"><a class="link" href="#">Archive</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="container">
+            <form>
+                    <h2 class="formTitle">Search for a claim</h2>
+
+                    <p>Enter a policy number or part of the customer's surname</p>
+
+                    <label for="policyNumber">Policy Number</label>
+                    <input type="text" name="policyNumber" id="policyNumber" placeholder="Policy No.">
+
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" placeholder="Surname">
+
+                    <button type="button" name="registerButton">Search</button>
+            </form>
+        </div>
+
+        <div class="tableContainer">
+            <h2 class="formTitle">Results</h2>
+            <table>
+                <tr>
+                  <th>Policy Number</th>
+                  <th>Surname</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>3281</td>
+                  <td>Smith</td>
+                  <td>awaiting assessment</td>
+                  <td><button class="tableButton" type="button" name="registerButton">OPEN</button></td>
+                </tr>
+                <tr>
+                    <td>4583</td>
+                    <td>Smithy</td>
+                    <td>approved</td>
+                    <td><button class="tableButton" type="button" name="registerButton">OPEN</button></td>
+                  </tr>
+              </table>
+        </div>
+
+        <footer class="footersearch">
+            <p>&copy Claims First 2022</p>
+        </footer>
+
+    </body>
+</html>
